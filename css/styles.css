@@ -1,9 +1,23 @@
 body {
     font-family: "Montserrat" , sans-serif;
-    color: #111111;
-    background-color: #ffffff;
 }
-.logo {
+a {
+    text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* HEADER */
+.header-logo {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -11,64 +25,200 @@ body {
     text-transform: uppercase;
     color:#111111
 }
-.simply {
+.header-logo-cursive {
     font-style: italic;
 }
-ul {
-    list-style: none;
-}
-.menu {
+
+.header-menu-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #111111;
+    color: #111;
     text-decoration: none;
 }
-.follow {
-    color:#111111;
-}
-.follow:hover,
-.follow:focus {
-    color: #FD9222;
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: #fd9222;
 }
 
-h1 {
+
+/*  */
+/* MAIN HERO */
+.hero {
+    background: rgba(17, 17, 17, 0.6);
+}
+.hero-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 34px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    max-width: 500px;
-    color:#ffffff
+    letter-spacing: -0.03em;
+    color: #fff;
 }
-.centerbutton {
-    background-color: #FD9222;
-    font-family: "Montserrat" , sans-serif;
-    padding: 14px 40px 14px 40px;
-    border-radius: 100px;
+.hero-buy-btn {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-made-btn {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-down-btn {
     font-weight: 500;
-    display: block;
-    border: none;
-    color:#ffffff;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: #fff;
 }
-.howbutton {
-    background-color: #ffffff;
-    font-family: "Montserrat" , sans-serif;
-    padding: 14px 40px 14px 40px;
-    border-radius: 100px;
-    display: block;
-    border: 1px #ffffff;
+/*  */
+/* MAIN FEATURES */
+.features {
+    background: #1e1823;
 }
-.startbig {
-    background-color: #111111;
-    opacity: 60%;
-    
+.features-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
 }
-
+.features-item-text {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+/*  */
+/* MAIN TASTE */
+.taste-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+}
+.taste-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #111;
+}
+/*  */
+/* MADE */
+.made-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111111;
+}
+.made-item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+/*  */
+/* PRODUCTS */
+.products-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #111;
+    text-transform: uppercase;
+}
+.products-item-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: #111;
+    opacity: 70%;
+}
+.products-item-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #111;
+}
+/*  */
+/* SELLERS */
+.sellers-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111;
+}
+/*  */
+/* NEXT SELLERS */
+.loved-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #111;
+}
+.loved-item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+    opacity: 70%;
+}
+.loved-btn {
+    font-weight: 600;
+    font-size: 18px;
+    color: #111;
+}
+/*  */
+/* FOOTER */
+.footer {
+    background: #1e1823;
+}
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+.footer-text span {
+    color: #fd9222;
+}
+.footer-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+.footer-address {
+    font-style: normal;
+}
+.footer-contacts-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+}
+.footer-menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
 
 
 
