@@ -238,13 +238,16 @@ img {
     padding-top: 32px;
 }
 .made-container {
-    display: 
-    align-items:
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
 }
 .made-image {
     padding-top: 32px;
     width: 600;
+}
+.made-container-list {
+    gap: 88px;
 }
 .made-subtitle {
     font-weight: 600;
